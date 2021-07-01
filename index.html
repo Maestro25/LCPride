@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Юридическая компания "Прайд"</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css"> 
+  <link rel="stylesheet" type="text/css" href="css/adaptive.css">
+</head>
+
+<body>
+	<header class="page-header">
+		<div class="content-wrapper">
+			<a class="logo" href="index.html">ПРАЙД</a>
+			<a class="phone-link" href="tel:+79889408927">8-988-940-89-27</a>
+			<button class="burger">
+					<div class="line-1"></div>
+					<div class="line-2"></div>
+					<div class="line-3"></div>
+			</button>
+			<nav class="header-nav">
+				<ul class="nav-list">
+					<li class="nav-item"><a href="index.html#about" class="nav-link">О компании</a></li>
+					<li class="nav-item"><a href="index.html#services" class="nav-link">Наши услуги</a></li>
+					<li class="nav-item"><a href="index.html#write-me" class="nav-link">Напишите нам</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main class="page-main">
+		<section class="promo">
+			<div class="content-wrapper">
+				<h1 class="promo-heading">Юридическая<br>Компания <span class="heading-span">Прайд</span>
+				</h1>
+			</div>
+		</section>
+		<section class="about" id="about">
+			<div class="content-wrapper">
+				<h1 class="about-heading">О компании</h1>
+				<p>Молодая и перспективная юридическая компания, в рядах которой трудятся квалифицированные специалисты.
+				   <br>Главная цель - достигнуть справедливости в решении Вашего вопроса, оказать услугу качественно и профессионально.</p>
+			</div>
+		</section>
+		<section class="services" id="services">
+			<div class="content-wrapper">
+				<h2 class="section-heading">Наши услуги</h2>
+					<ul class="services-list">
+						<li class="services-item"><a class="services-link" href="business-support.html">Юридическое сопровождение бизнеса</a></li>
+						<li class="services-item"><a class="services-link" href="consumer-protection.html">Защита прав потребителя</a></li>
+						<li class="services-item"><a class="services-link" href="inheritance-law.html">Вопросы наследства</a></li>
+						<li class="services-item"><a class="services-link" href="family-law.html">Семейные споры</a></li>
+						<li class="services-item"><a class="services-link" href="medical-law.html">Медицинское право</a></li>
+						<li class="services-item"><a class="services-link" href="court-representation.html">Представительсво в суде</a></li>
+						<li class="services-item"><a class="services-link" href="bankruptcy.html">Банкротство физических лиц</a></li>
+					</ul>
+			</div>
+		</section>
+		<section class="write-me" id="write-me">
+		<div class="content-wrapper">
+			<h2 class="section-heading">Напишите нам</h2>
+				<form action="message.php" method="post" class="write-me-form">
+					<p class="input-wrapper">
+						<label for="name" class="input-label">Ф.И.О.</label>
+						<input type="text" name="name" id="name" class="text-input js-input" placeholder="Иванов Иван Иванович" required>
+					</p>
+					<p class="input-wrapper">
+						<label for="email" class="input-label">E-mail</label>
+						<input type="email" name="email" id="email" class="text-input js-input" placeholder="google@gmail.com" required >
+					</p>
+					<p class="input-wrapper">
+						<label for="tel" class="input-label">Номер телефона</label>
+						<input type="tel" name="tel" id="tel" class="text-input js-input" required  minlength="15">
+					</p>
+					<p class="input-wrapper-big">
+						<label for="text-field" class="input-label">Опишите вашу проблему</label>
+						<textarea name="text-field" id="text-field" cols="30" rows="4" class="text-field js-message" required placeholder="" minlength="20" maxlength="200"></textarea>
+					</p>
+					<p class="input-wrapper check">
+						<input type="checkbox" name="policy-check" id="policy-check" class="policy-check" required>
+						<label for="policy-check">Даю согласие на обработку моих персональных данных</label>
+					</p>
+					<button class="section-button js-submit" name="submit" type="submit">ОТПРАВИТЬ</button>
+					
+					<ul class="contacts-list">
+					<li class="contacts-item">
+						<a href="tel:+79889408927" class="contacts-link phone">
+							<img src="img/phone.svg" width="65">
+						</a>
+					</li>
+					<li class="contacts-item">
+						<a href="mailto:Egorkudelkin@bk.ru" class="contacts-link email">
+							<img src="img/email1.svg" width="65">
+						</a>
+					</li>
+					<li class="contacts-item">
+						<a href="https://t.me/joinchat/Egor_K3" class="contacts-link telegram">
+							<img src="img/telegram.svg" width="65">
+						</a>
+					</li>
+					<li class="contacts-item">
+						<a href="https://wa.me/79889408927" class="contacts-link whatsapp">
+							<img src="img/whatsapp.svg" width="65">
+						</a>
+					</li>
+				</ul>
+				</form>
+				<div class="map"><a href="https://yandex.ru/maps/39/rostov-na-donu/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ростов‑на‑Дону</a><a href="https://yandex.ru/maps/39/rostov-na-donu/house/sotsialisticheskaya_ulitsa_53/Z0AYcQdnSEUPQFptfX5weXVjbA==/inside/?from=api-maps&ll=39.707108%2C47.218908&tab=inside&utm_medium=mapframe&utm_source=maps&z=17.88" style="color:#eee;font-size:12px;position:absolute;top:14px;">Социалистическая улица, 53 на карте Ростова-на-Дону — Яндекс.Карты</a>
+				<iframe class="map-frame" src="https://yandex.ru/map-widget/v1/-/CCUe5KSjxC" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+
+		</div>
+	</section>
+	
+ 	</main>
+
+ 	<footer class="page-footer">
+   	 	<div class="content-wrapper">
+     	 	<p class="copyright">&copy ЮК "Прайд" 2021. Все права защищены.</p>
+     	 	<a href="policy.html" class="private-policy-link">Политика обработки и защиты персональных данных</a>
+    	</div>
+  	</footer>
+  	<script type="text/javascript" src="js/burger.js"></script>
+		<script type="text/javascript" src="js/form.js"></script>
+		<script src="https://unpkg.com/imask"></script>
+		<script type="text/javascript" src="js/phone.js"></script>
+</body>
+</html>

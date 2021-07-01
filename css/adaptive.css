@@ -1,0 +1,49 @@
+/*=========    Desktop First    =========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+	/* */
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+	html {
+		font-size: 80%;
+	}
+
+	.content-wrapper {
+		width: 90%;
+	}
+}		
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+	html {
+		font-size: 75%;
+
+	}
+	.burger {
+		display: block;
+	}
+
+	.content-wrapper {
+		width: 100%;
+		margin: ;
+	}
+
+	.write-me form {
+		width: 90%;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+	html {
+		
+
+	}
+
+	.write-me form {
+		width: 100%;
+	}
+}

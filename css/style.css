@@ -1,0 +1,371 @@
+/* Убираем стандартные отступы-*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/**/
+
+body {
+	font-family: 'Merriweather', sans-serif;
+	font-size: 24px;
+	font-weight: bolder;
+	color: #CBBC88;
+	background-color: #3C3B39;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+li {
+	list-style: none;
+}
+
+h1 {
+	margin: 0;
+}
+
+.content-wrapper {
+	margin: 0 auto;
+	width: 85%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.section-heading {
+	margin-bottom: 1.5em;
+	align-self: center;
+}
+
+/* Шапка сайта */
+
+.page-header {
+	position: fixed;
+	min-width: 320px;
+	width: 100%;
+	height: 10vh;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.page-header .content-wrapper {
+	width: 80%;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.logo {
+	margin-top: 1.5rem;
+	font-size: 36px;
+	color: #CBBC88;
+}
+
+.header-nav {
+	margin-top: 1.5rem;
+	width: 50%;
+}
+
+.phone-link {
+	margin-top: 1.5rem;
+	color: #CBBC88;
+	text-decoration: underline;
+	filter: drop-shadow(1px 1px 4px #000);
+}
+
+.nav-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-link:hover {
+	text-decoration: underline;
+	transition: all 0.5s ease-in;
+}
+
+.promo {
+	width: 100%;
+	height: 100vh;
+	background: url('../img/promo-bgr.jpg');
+	background-size: cover;
+}
+
+.promo .promo-heading {
+	font-size: 72px;
+	line-height: 1.5em;
+	text-align: center;
+	position: absolute;
+	filter: drop-shadow( 5px 5px 5px rgb( 0, 0, 0)) 
+			drop-shadow( -1px -1px 5px rgba( 233, 188, 136, 0.5));
+	top: 30%;
+	right: 25%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	user-select: none;
+	transform: perspective(1000px) rotateY(-11deg) rotate(-1deg);
+}
+
+.about {
+	background: url('../img/about-bgr.jpg');
+	background-size: cover;
+	width: 100%;
+	
+}
+
+.about .content-wrapper {
+	padding-top: 12vh;
+	height: 100vh;
+}
+
+.about p {
+	margin-top: 10rem;
+	width: 75%;
+	font-size: 2.25rem;
+	line-height: 2.75rem;
+	font-style: italic;
+}
+
+.services {
+	background: url('../img/services-bgr.jpg');
+	background-size: cover;
+	width: 100%;
+	
+}
+
+.services .content-wrapper {
+	padding-top: 12vh;
+	height: 100vh;
+	align-items: center;
+}
+
+.services p {
+	align-self: flex-start;
+}
+
+.services .services-list {
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+
+}
+
+.services-link {
+	font-size: 2rem;
+}
+
+.heading-span {
+	font-family: 'Philosopher', sans-serif;
+	font-size: 144px;
+	user-select: none;
+}
+
+.page-footer {
+	font-size: 0.5em;
+	position: fixed;
+	bottom: 0;
+	min-width: 320px;
+	width: 100%;
+	z-index: 1;
+	padding-bottom: 0.5em;
+}
+
+.page-footer .content-wrapper {
+	width: 80%;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+	height: 5vh;
+	
+}
+
+.footer-list {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.court {
+	width: 100%;
+	background: url('../img/court-bgr.jpg');
+	background-size: cover;
+}
+
+.business {
+	width: 100%;
+	background: url('../img/business-bgr.jpg');
+	background-size: cover;
+}
+.bankrupcy {
+	width: 100%;
+	background: url('../img/bankrupcy-bgr.jpg');
+	background-size: cover;
+}
+
+.consumer {
+	width: 100%;
+	background: url('../img/consumer-bgr.jpg');
+	background-size: cover;
+}
+
+.family {
+	width: 100%;
+	background: url('../img/family-bgr.jpg');
+	background-size: cover;
+}
+
+.inheritance {
+	width: 100%;
+	background: url('../img/inheritance-bgr.jpg');
+	background-size: cover;
+}
+
+.medical {
+	width: 100%;
+	background: url('../img/medical-bgr.jpg');
+	background-size: cover;
+}
+
+.services-item .content-wrapper {
+	padding-top: 12vh;
+	height: 100vh;
+	display: flex;
+}
+
+.services-page-heading {
+	padding-top: 0;
+	margin-top: 0;
+}
+
+.services-page-list {
+	font-size: 2rem;
+	margin-top: 5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.services-page-list li {
+	padding-top: 1.25rem;
+}
+.services-page-list li:last-child {
+	margin-top: 5rem;
+}
+
+.write-me {
+	width: 100%;
+	background: url('../img/medcine-bgr.jpg');
+	background-size: cover;
+}
+
+.write-me .content-wrapper {
+	padding-top: 12vh;
+	height: 100vh;
+	align-items: center;
+}
+
+.write-me form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em 0.5em;
+	width: 75%;
+	background-color: #3C3B39;
+	border: 1px solid rgba( 233, 188, 136, 0.5);
+	border-radius: 1rem;
+}
+
+.input-wrapper {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 1em;
+}
+
+.input-wrapper-big {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.input-wrapper.check {
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+input.policy-check {
+	margin-right: 0.5em;
+}
+
+input, textarea {
+	padding: 0.25rem 0.5rem;
+	border-radius: 0.5rem;
+}
+
+.section-button {
+	padding: 0 0.5em;
+	color: #CBBC88;
+	background-color: #3C3B39;
+	border: 1px solid #CBBC88;
+	border-radius: 1em;
+}
+.contacts-list {
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+
+.map {
+	width: 75%;
+	border-radius: 1rem;
+	position: relative;
+	overflow: hidden;
+}
+
+.map-frame {
+	width: 100%;
+	height: 25vh;
+}
+
+.policy .content-wrapper {
+	display: flex;
+	min-height: 100vh;
+	padding-top: 12vh;
+	align-items: flex-start;
+	padding-bottom: 5vh;
+}
+
+.policy {
+	font-size: 1rem;
+	display: flex;
+
+}
+
+.policy h2 {
+	margin-top: 1.5rem;
+	align-self: flex-start;
+}
+
+.policy p {
+	margin: 0;
+	margin-top: 1rem;
+	
+}
+
+.burger {
+	display: none;
+}
