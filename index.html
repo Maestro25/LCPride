@@ -2,31 +2,47 @@
 <html lang="ru">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Юридическая компания "Прайд"</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css" type="text/css">
-  <link rel="stylesheet" href="css/style.css" type="text/css"> 
-  <link rel="stylesheet" type="text/css" href="css/adaptive.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  	<meta name="description" content="Быстрое и качественное решение ваших юридических вопросов. Тел: 8-988-940-89-27.">
+  	<meta name="keywords" content="юридические услуги, юрист ростов-на-дону,.hbcn hjcnjd-yf-ljye, правовая помощь, .hblbxtcrfz rjvgfybz, консультация, адвокат, телефон, нужен, арбитражный">
+  	<title>Юридическая компания "Прайд"</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css"> 
+	<link rel="stylesheet" type="text/css" href="css/adaptive.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type=" image/svg+xml" href="favicon/favicon.svg">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#dccf56">
+	<meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
+	<div class="landscape-hflex"> 
+		<h2>Верните экран в горизонтальное положение.</h2>
+	</div>
 	<header class="page-header">
+		<div><img src="https://mc.yandex.ru/watch/84151993" style="position:absolute; left:-9999px;" alt="" /></div>
 		<div class="content-wrapper">
-			<a class="logo" href="index.html">ПРАЙД</a>
-			<a class="phone-link" href="tel:+79889408927">8-988-940-89-27</a>
-			<button class="burger">
+			<nav class="header-nav">
+				<a class="logo" href="index.html"><img src="img/logo.png" width="60"></a>
+				<a class="phone-link" href="tel:+79889408927">8-988-940-89-27</a>
+				<button class="burger">
 					<div class="line-1"></div>
 					<div class="line-2"></div>
 					<div class="line-3"></div>
-			</button>
-			<nav class="header-nav">
+				</button>
 				<ul class="nav-list">
 					<li class="nav-item"><a href="index.html#about" class="nav-link">О компании</a></li>
 					<li class="nav-item"><a href="index.html#services" class="nav-link">Наши услуги</a></li>
 					<li class="nav-item"><a href="index.html#write-me" class="nav-link">Напишите нам</a></li>
+					<li class="nav-item"><a href="index.html#map" class="nav-link">Как добраться</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -40,9 +56,21 @@
 		</section>
 		<section class="about" id="about">
 			<div class="content-wrapper">
-				<h1 class="about-heading">О компании</h1>
-				<p>Молодая и перспективная юридическая компания, в рядах которой трудятся квалифицированные специалисты.
-				   <br>Главная цель - достигнуть справедливости в решении Вашего вопроса, оказать услугу качественно и профессионально.</p>
+				<h2 class="section-heading">О компании</h2>
+				<div class="about-item-wrapper">
+					<div class="about-item item-1">
+						<h3 class="about-item-heading">Профессионализм.</h3>
+						<p class="about-item-text">Решение вашего вопроса <strong>квалифицированным</strong> правовым методом. Защита ваших интересов и прав.</p>
+					</div>
+					<div class="about-item item-2">
+						<h3 class="about-item-heading">Прозрачность.</h3>
+						<p class="about-item-text">Понятные и честные условия договора с <strong>фиксированной</strong>  стоимостью оказания услуг.</p>
+					</div>
+					<div class="about-item item-3">
+						<h3 class="about-item-heading">Результат.</h3>
+						<p class="about-item-text">Корректные и пошаговые действия сотрудников нашей компании гарантированно приведут к <strong>успешному</strong> решению вашей правовой ситуации.</p>
+					</div>
+				</div>
 			</div>
 		</section>
 		<section class="services" id="services">
@@ -73,7 +101,7 @@
 					</p>
 					<p class="input-wrapper">
 						<label for="tel" class="input-label">Номер телефона</label>
-						<input type="tel" name="tel" id="tel" class="text-input js-input" required  minlength="15">
+						<input type="tel" name="tel" id="tel" class="text-input js-input" required  maxlenght="11">
 					</p>
 					<p class="input-wrapper-big">
 						<label for="text-field" class="input-label">Опишите вашу проблему</label>
@@ -92,12 +120,12 @@
 						</a>
 					</li>
 					<li class="contacts-item">
-						<a href="mailto:Egorkudelkin@bk.ru" class="contacts-link email">
+						<a href="mailto:lcpride@yandex.ru" class="contacts-link email">
 							<img src="img/email1.svg" width="65">
 						</a>
 					</li>
 					<li class="contacts-item">
-						<a href="https://t.me/joinchat/Egor_K3" class="contacts-link telegram">
+						<a href="https://t.me/Egor_K3" class="contacts-link telegram">
 							<img src="img/telegram.svg" width="65">
 						</a>
 					</li>
@@ -107,11 +135,20 @@
 						</a>
 					</li>
 				</ul>
-				</form>
-				<div class="map"><a href="https://yandex.ru/maps/39/rostov-na-donu/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ростов‑на‑Дону</a><a href="https://yandex.ru/maps/39/rostov-na-donu/house/sotsialisticheskaya_ulitsa_53/Z0AYcQdnSEUPQFptfX5weXVjbA==/inside/?from=api-maps&ll=39.707108%2C47.218908&tab=inside&utm_medium=mapframe&utm_source=maps&z=17.88" style="color:#eee;font-size:12px;position:absolute;top:14px;">Социалистическая улица, 53 на карте Ростова-на-Дону — Яндекс.Карты</a>
+				<div class="map"><a href="https://yandex.ru/maps/39/rostov-na-donu/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;"></a><a href="https://yandex.ru/maps/39/rostov-na-donu/house/sotsialisticheskaya_ulitsa_53/Z0AYcQdnSEUPQFptfX5weXVjbA==/inside/?from=api-maps&ll=39.707108%2C47.218908&tab=inside&utm_medium=mapframe&utm_source=maps&z=17.88" style="color:#eee;font-size:12px;position:absolute;top:14px;">Социалистическая улица, 53 на карте Ростова-на-Дону — Яндекс.Карты</a>
 				<iframe class="map-frame" src="https://yandex.ru/map-widget/v1/-/CCUe5KSjxC" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
 
+				</form>
+				
 		</div>
+	</section>
+	<section class="map" id="map">
+		<div class="content-wrapper">
+			<h2 class="section-heading">Как к нам добраться</h2>
+			<div class="map-mobile"><a href="https://yandex.ru/maps/39/rostov-na-donu/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;"></a><a href="https://yandex.ru/maps/39/rostov-na-donu/house/sotsialisticheskaya_ulitsa_53/Z0AYcQdnSEUPQFptfX5weXVjbA==/inside/?from=api-maps&ll=39.707108%2C47.218908&tab=inside&utm_medium=mapframe&utm_source=maps&z=17.88" style="color:#eee;font-size:12px;position:absolute;top:14px;"></a>
+				<iframe class="map-frame" src="https://yandex.ru/map-widget/v1/-/CCUe5KSjxC" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+		</div>
+
 	</section>
 	
  	</main>
@@ -122,9 +159,10 @@
      	 	<a href="policy.html" class="private-policy-link">Политика обработки и защиты персональных данных</a>
     	</div>
   	</footer>
+  	<script type="text/javascript" src="js/metrika.js"></script>
   	<script type="text/javascript" src="js/burger.js"></script>
-		<script type="text/javascript" src="js/form.js"></script>
-		<script src="https://unpkg.com/imask"></script>
-		<script type="text/javascript" src="js/phone.js"></script>
+	<script type="text/javascript" src="js/form.js"></script>
+	<script src="https://unpkg.com/imask"></script>
+	<script type="text/javascript" src="js/phone.js"></script>
 </body>
 </html>
