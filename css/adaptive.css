@@ -194,6 +194,10 @@
       min-width: 300px;
    }
 
+   .section-heading {
+      font-size: 1.75rem;
+   }
+
    .landscape-hflex {
       display: none;
    }
@@ -462,6 +466,10 @@
       width: 100%;
    }
 
+   .contacts-link img {
+      width: 60px;
+   }
+
 /* Карта Яндекс */
    section.map {
       display: flex;
@@ -526,3 +534,4 @@
    .landscape-hflex {
       display: flex;
    }
+}
