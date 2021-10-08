@@ -1,49 +1,528 @@
 /*=========    Desktop First    =========*/
 /* Large Devices, Wide Screens */
-@media only screen and (max-width: 1200px) {
-	/* */
+@media screen and (max-width: 1200px) {
+	.content-wrapper {
+      min-width: 992px;
+
+   }
+   section.map {
+      display: none;
+   }
+   
+   .promo .promo-heading {
+      transform: none;
+   }
+}
+
+@media screen and (max-width: 1200px) and (orientation:  landscape) {
+   .content-wrapper {
+      min-width: 992px;
+
+   }
+
+   .promo .promo-heading {
+      transform: none;
+   }
+
+   .map {
+      display: none;
+   }
+
+   section.map {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .services-page-list {
+      font-size: 1.5rem;
+   }
+   .map .content-wrapper {
+      padding-top: 13vh;
+      width: 80%;
+
+   }
+   
+   .map-mobile {
+      width: 75%;
+      height: 85%;
+   }
+   .map-frame {
+      width: 100%;
+      height: 100%;
+      user-select: none;
+   }
+
+   .map-frame {
+      width: 100%;
+   }
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width: 992px) {
+@media screen and (max-width: 992px) {
 	html {
-		font-size: 80%;
-	}
+      font-size: 90%;
+   }
 
-	.content-wrapper {
-		width: 90%;
-	}
-}		
+   .promo .promo-heading {
+      transform: none;
+   }
+
+   .content-wrapper  {
+      width: 85%;
+      min-width: 768px;
+   }
+
+   section.map {
+      display: none;
+   }
+
+
+}
+
+@media screen and (max-width: 992px) and (orientation: landscape) {
+   /* */
+   .promo .promo-heading {
+      transform: none;
+   }
+
+   .map {
+      display: none;
+   }
+
+   section.map {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .map .content-wrapper {
+      width: 85%;
+      padding-top: 13vh;
+
+   }
+   
+   .map-mobile {
+      width: 100%;
+      height: 85%;
+   }
+   .map-frame {
+      width: 100%;
+      height: 100%;
+      user-select: none;
+   }
+
+   .map-frame {
+      width: 100%;
+   }
+}
 
 /* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	html {
-		font-size: 75%;
+      font-size: 80%;
+   }
 
-	}
-	.burger {
-		display: block;
-	}
 
-	.content-wrapper {
-		width: 100%;
-		margin: ;
-	}
+   .content-wrapper  {
+      width: 90%;
+      min-width: 480px;
+   }
 
-	.write-me form {
-		width: 90%;
-	}
+   .page-header .content-wrapper {
+      width: 95%;
+      min-width: 480px;
+   }
 
+   .promo .promo-heading {
+      font-size: 4rem;
+      position: initial;
+      filter: drop-shadow( 5px 5px 5px rgb( 0, 0, 0)) 
+            drop-shadow( -1px -1px 5px rgba( 233, 188, 136, 0.5));
+      top: 30%;
+      right: 25%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      user-select: none;
+      transform: none;  
+   }
+
+   .heading-span {
+      font-family: 'Philosopher', sans-serif;
+      font-size: 6rem;
+      user-select: none;
+   }
+
+   .services-item .content-wrapper {
+      padding-top: 13vh;
+   }
+
+   
+
+   section.map {
+      display: none;
+   }  
+}
+
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+	/* */
+   .landscape-hflex {
+      display: flex;
+   }
+
+   body {
+      overflow: hidden;
+   }
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px) {
-	html {
-		
+@media screen and (max-width: 480px) {
+/* Общие свойства */
+   html {
+      font-size: 75%;   
+   }
 
-	}
+   section {
+      height: 100vh;
+   }
 
-	.write-me form {
-		width: 100%;
-	}
+   .content-wrapper  {
+      width: 90%;
+      min-width: 300px;
+   }
+
+   .landscape-hflex {
+      display: none;
+   }
+/* Шапка сайта */
+   .page-header {
+      height: 12vh;
+   }
+
+   .page-header .content-wrapper {
+      width: 100%;
+      min-width: 300px;
+   }
+
+   .header-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin: 0;
+      padding: 0 0.5rem;
+   }
+
+   .burger, .burger-inner {
+      width: 37px;
+      padding: 0;
+      border: 1px solid #CBBC88;
+      border-radius: 0.5em;
+      background-color: transparent;
+      display: block;
+   }
+
+   .burger div, .burger-inner div {
+      margin: 5px 5px;
+      width: 25px;
+      height: 3px;
+      background-color: #CBBC88;
+      transition: all 0.3s ease;
+   }
+
+   .open .line-1 {
+      transform: rotate(-45deg) translate(-5px, 6px);
+   }
+
+   .open .line-2{
+      opacity: 0;
+   }
+
+   .open .line-3 {
+      transform: rotate(45deg) translate(-5px, -6px);
+   }
+
+   .nav-list {
+      display: none;
+      position: absolute;
+      width: 100%;
+      height: 88vh;
+      top: 12vh;
+      left: 0;
+      background-color: #CBBC88;
+      color: #3C3B39;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      z-index: 0;
+      transform: translateY(-200%);
+      transition: transform 0.3s ease-in;
+      padding: 2.5rem 0;
+      margin: 0;
+   }
+
+   .nav-list li {
+      font-size: 1.75rem;
+   }
+
+   .nav-item:last-child {
+      display: block;
+   }
+
+   .nav-active {
+     display:  flex;
+     transform: translateY(0%);
+     overflow: hidden;
+   }
+
+   .logo img {
+      width: 55px;
+   }
+
+   .phone-link {
+      font-size: 1.5rem;
+   }
+
+/* Промо */
+
+   .promo  {
+      background: center url('../img/promo-bgr.jpg');
+      background-size: cover;
+   }
+
+   .promo .promo-heading {
+      padding-top: 2.5rem;
+      font-size: 3rem;   
+      position: initial;
+      filter: drop-shadow( 5px 5px 5px rgb( 0, 0, 0)) 
+	       drop-shadow( 5px 5px 5px rgb( 0, 0, 0))
+            drop-shadow( -1px -1px 5px rgba( 233, 188, 136, 0.5));
+      top: 50%;
+      right: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+      transform: none;  
+      z-index: 0;
+   }
+
+   .promo .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   .heading-span {
+     font-size: 5rem;
+     user-select: none;
+   }
+
+/* О компании */
+
+   .about {
+      background: center url('../img/about-bgr.jpg');
+      background-size: cover;
+   }
+
+   .about .content-wrapper {
+      padding-top: 13vh;
+      height: 100vh;
+   }
+
+   .about-item-wrapper {
+      flex-direction: column;
+   }
+
+   .about-item {
+      flex-basis: 100%;
+      
+   }
+
+   .about-item-heading {
+      text-align: center;
+   }
+
+   .about p {
+      margin-top: 1rem;
+      text-align: center;
+      font-size: 1.25rem;
+      line-height: 2rem;
+      font-style: italic;
+      text-align: left;
+   }
+
+/* Услуги */
+
+   .services {
+     background: center url('../img/services-bgr.jpg');
+     background-size: cover;
+   }
+
+   .services .content-wrapper {
+      padding: 0.5rem 2rem;
+      padding-top: 13vh;
+   }
+
+   .bankrupcy ul li,
+   .business ul li,
+   .court ul li,
+   .consumer ul li,
+   .family ul li,
+   .inheritance ul li,
+   .medical ul li{
+      font-size: 75%;
+   }
+
+/* Услуги: представительство в суде */
+   .court {
+      width: 100%;
+      background: center url('../img/court-bgr.jpg');
+      background-size: cover;
+      }
+
+/* Услуги: поддержка бизнеса */
+
+   .business {
+      width: 100%;
+      background: center url('../img/business-bgr.jpg');
+      background-size: cover;
+   }
+
+/* Услуги: банкротство */   
+
+   .bankrupcy {
+      width: 100%;
+      background: center url('../img/bankrupcy-bgr.jpg');
+      background-size: cover;
+   }
+
+/* Услуги: защита прав потребителя */
+
+   .consumer {
+      width: 100%;
+      background: center url('../img/consumer-bgr.jpg');
+      background-size: cover;
+   }
+
+/* Услуги: семейные споры */
+
+   .family {
+      width: 100%;
+      background: center url('../img/family-bgr.jpg');
+      background-size: cover;
+   }
+
+/* Услуги: наследование */
+
+   .inheritance {
+      width: 100%;
+      background: center url('../img/inheritance-bgr.jpg');
+      background-size: cover;
+   }
+
+/* Услуги: медицинское право */
+
+   .medical {
+      width: 100%;
+      background: center url('../img/medical-bgr.jpg');
+      background-size: cover;
+   }
+
+/* Напишите нам */
+   .write-me .content-wrapper {
+      padding-top: 11vh;
+   }
+
+   .write-me form {
+      width: 100%;
+      padding: 0.5rem 0.5rem;
+      margin-bottom: 10vh;
+   }
+
+   input {
+      padding: 0.5rem 2rem;
+      padding-left: 0.5rem;
+   }
+
+   .input-wrapper{
+      width: 95%;
+   }
+
+   .input-wrapper-big {
+      width: 95%;
+   }
+
+   .contacts-list {
+      width: 100%;
+   }
+
+/* Карта Яндекс */
+   section.map {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .map h2 {
+      margin-bottom: 1.2rem;
+   }
+
+   .map .content-wrapper {
+      padding-top: 13vh;
+   }
+   
+   .map-mobile {
+      width: 100%;
+      height: 85%;
+   }
+
+   .map-frame {
+      width: 100%;
+      height: 100%;
+      user-select: none;
+   }
+   .map {
+      display: none;
+   }
+
+   .map-frame {
+      width: 100%;
+   }
+
+/* Футер */
+
+   .page-footer .content-wrapper {
+      width: 100%;
+      justify-content: space-between;
+      align-items: flex-end;
+      font-size: 0.75rem;
+   }
+
+   .footer-active {
+      display: none;
+   }
+
+   .copyright {
+      text-align: center;
+   }
+
+   .private-policy-link {
+      margin-right: 0;
+      text-align: center;
+   }
+
+
+/* Политика обработки данных */
+
 }
+
+@media screen and (max-width: 480px) and (orientation: landscape) {
+   .landscape-hflex {
+      display: flex;
+   }
