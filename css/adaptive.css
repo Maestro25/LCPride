@@ -373,6 +373,14 @@
       padding-top: 13vh;
    }
 
+   .services-page-list {
+      margin-top: 2rem;
+   }
+
+   .services-page-list li:last-child {
+      margin-top: 2rem;
+   }
+
    .bankrupcy ul li,
    .business ul li,
    .court ul li,
@@ -380,7 +388,7 @@
    .family ul li,
    .inheritance ul li,
    .medical ul li{
-      font-size: 75%;
+      font-size: 70%;
    }
 
 /* Услуги: представительство в суде */
