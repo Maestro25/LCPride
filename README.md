@@ -1,1 +1,1 @@
-# LCPride
+# Pride
